@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int b = 1, d;
+double c = 0.5, a = 1.;
+cout << "Input number: ";
+cin >> d;
+if (d>1) {
+for (int i = 1; i <= d-1; i++) {
+a = b + c;
+c = b / a;
+}
+cout << "\nanswer = " << a;
+}else if (d<=0){
+    cout << "\nerror";
+}else{
+    cout << "\nanswer = 2";
+}
+return 0;
+}
